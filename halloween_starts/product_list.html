@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Halloween Store</title>
+    <link rel="favicon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="normalize-stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#horizontal_menu').slicknav({ prependTo: "#mobile_menu" });
+    });
+    </script>
+</head>
+
+<body>
+    <header class="gradient_one">
+        <img class="pumpkin" src="images/pumpkin.gif" alt="pumpkin" usemap="#home">
+        <map name="home">
+            <area href="index.html" alt="Pumpkin" title="Home" shape="circle" coords="42,40,38">
+        </map>
+        <h1>The Halloween Store</h1>
+        <h2 class="description">For the little Globlin in all of us!</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="horizontal_menu">
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="product_list.html" id="products">Product List</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Decorating Ideas</a>
+                <ul class="decor">
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Indoor</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="email.html" class="lastitem">Join Email</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside id="vertical_menu">
+            <ul>
+                <li class="list"><a href="https://www.google.com/">Props</a></li>
+                <li class="list"><a href="https://www.google.com/">Costumes</a></li>
+                <li class="list"><a href="https://www.google.com/">Special FX</a></li>
+                <li class="list"><a href="https://www.google.com/">Masks</a></li>
+            </ul>
+        </aside>
+        <section class="main">
+            <table>
+                <caption>Product List</caption>
+                <thead>
+                    <tr>
+                        <th id="category">Category</th>
+                        <th id="description">Description</th>
+                        <th id="price">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="5" headers="category">Props</th>
+                        <td headers="description"><a href="#">20" Deranged cat</a></td>
+                        <td headers="price">$39.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Flying bats</a></td>
+                        <td headers="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">16" Ugly rat</a></td>
+                        <td headers="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">20" Uglier rat</a></td>
+                        <td headers="price">$19.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Plastic skeleton</a></td>
+                        <td headers="price">$12.50</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" headers="category">Costumes</th>
+                        <td headers="description"><a href="#">Austin Powers</a></td>
+                        <td headers="price">$79.50</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Frankstein</a></td>
+                        <td headers="price">$49.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Martian</a></td>
+                        <td headers="price">$69.99</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" headers="category">Special effects</th>
+                        <td headers="description"><a href="#">Fog machine</a></td>
+                        <td headers="price">$34.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Fog juice</a></td>
+                        <td headers="price">$9.99</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Mini strobe light</a></td>
+                        <td headers="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" headers="category">Masks</th>
+                        <td headers="description"><a href="#">Freddy</a></td>
+                        <td headers="price">$44.50</td>
+                    </tr>
+                    <tr>
+                        <td headers="description"><a href="#">Darth Vader</a></td>
+                        <td headers="price">$124.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="gradient_two">
+        <p class="copyright">© 2019 Alvin Kwan.</p>
+    </footer>
+</body>
+
+</html>
