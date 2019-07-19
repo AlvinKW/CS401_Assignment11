@@ -86,12 +86,12 @@ header.gradient_one {
 
 
 /*subscribe form*/
-h2 #heading{
-    padding-top: 40px;
+ #heading{
+    padding-top: 1.5em;
 }
 
-form #format{
-    padding-bottom: 20px;
+#format{
+    padding-bottom: 2em;
 }
 
 section h2 {
