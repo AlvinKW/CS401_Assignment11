@@ -100,7 +100,7 @@ label {
     width: 5em;
 }
 
-input:not(#subscribe_btn) {
+input:not(#subscribe_button) {
     margin-left: 1em;
     margin-bottom: .5em;
     width: 50%;
@@ -108,7 +108,7 @@ input:not(#subscribe_btn) {
 
 
 
-#subscribe_btn {
+#subscribe_button {
     background-color: orange;
     border: 2px solid black;
     padding: .2em 2em;
