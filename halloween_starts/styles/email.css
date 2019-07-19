@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    max-width: 960px;
+    max-width: 900px;
     width: 95%;
 
     background-color: white;
@@ -24,7 +24,7 @@ body {
 
 li {
 
-    font-size: 110%;
+    font-size: 100%;
 
     font-weight: bold;
 }
@@ -67,9 +67,10 @@ header img.pumpkin {
 
 header h1 {
     text-indent: 0.5em;
-    font-size: 300%;
+    font-size: 250%;
     color: black;
     font-weight: bold;
+    font-family: 'Creepster', cursive;
 
 }
 
@@ -82,6 +83,7 @@ header.gradient_one {
     background-image: linear-gradient(45deg, white, orange 75%, black);
 
 }
+
 
 /*subscribe form*/
 section h2 {
@@ -104,12 +106,29 @@ input:not(#subscribe_btn) {
     width: 50%;
 }
 
+
+
 #subscribe_btn {
     background-color: orange;
     border: 2px solid black;
     padding: .2em 2em;
     margin-left: 7em;
     margin-top: .5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
+
+/*subscribe form after*/
+section h2 {
+    font-size: 150%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+section p {
+    font-size: 120%;
 }
 
 /*Main*/
@@ -122,11 +141,7 @@ section.main {
     float: right;
 }
 
-section.main h2 {
-    font-size: 150%;
-    font-weight: bold;
-    padding-top: 1em;
-}
+
 
 section h2.title1 {
     padding-top: 0;
@@ -185,9 +200,11 @@ aside.vertical_menu {
 
 }
 
-#horizontal_menu .email {
+#horizontal_menu #personal {
     color: orange;
 }
+
+
 
 #horizontal_menu ul li a {
     color: white;
@@ -209,6 +226,7 @@ aside.vertical_menu {
     float: none;
 
 }
+
 
 
 #horizontal_menu ul li:hover>ul {
@@ -248,11 +266,16 @@ aside.vertical_menu {
 }
 
 #vertical_menu ul li a {
-    padding: 0.5em 0 0.5em 1.5em;
+    padding: 0.5em 0 0.5em 2em;
     display: block;
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+
+h3 {
+    font-size: 80%;
+    font-weight: normal;
 }
 
 
@@ -402,5 +425,68 @@ footer.gradient_two {
 
     section h2 {
         font-size: 80%;
+    }
+}
+
+/*print media*/
+@media print {
+    body {
+
+        font-family: "Times New Roman", Times, serif;
+        width: auto;
+        border: none;
+        box-shadow: none;
+
+    }
+
+    section.main {
+        clear: both;
+        float: left;
+        margin-left: 15%;
+        margin-top: 0;
+        margin-bottom: 0;
+
+
+
+    }
+
+
+
+    .content {
+        display: none;
+    }
+
+    section.story p {
+        font-size: 12pt;
+    }
+
+    #horizontal_menu,
+    #vertical_menu {
+        display: none;
+    }
+
+    h2 {
+        font-family: sans-serif;
+    }
+
+    section.story #heading {
+
+        border-bottom: 2px solid black;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
     }
 }
